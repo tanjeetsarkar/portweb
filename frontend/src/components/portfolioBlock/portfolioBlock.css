@@ -1,0 +1,32 @@
+.portfolio-block {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 20px;
+  max-height: 30vh;
+}
+
+.hoverable-image {
+  transition: transform 0.3s;
+}
+
+.hoverable-image:hover {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  padding: 16px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.overlay-text {
+  color: white !important;
+  text-align: center;
+}
