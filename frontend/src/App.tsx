@@ -4,6 +4,7 @@ import { Header } from "./components/header/Header";
 import { PortfolioBlock } from "./components/portfolioBlock/PortfolioBlock";
 import { createContext, Dispatch, SetStateAction, useState } from "react";
 import { PortfolioSection } from "./components/portfolioSection/PortfolioSection";
+import Footer from "./components/footer/Footer";
 
 interface PortfolioContextProps {
   selectedSection: string | null;
@@ -77,6 +78,7 @@ function App() {
             </Grid.Container>
           </>}
       </PortfolioContext.Provider>
+      <Footer />
     </>
   );
 }
