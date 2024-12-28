@@ -1,0 +1,51 @@
+[
+    {
+        "caption": "birds",
+        "photos": [
+            "birds/IMG-20230720-WA0005.jpg",
+            "birds/IMG-20230720-WA0006.jpg",
+            "birds/IMG-20231126-WA0038.jpg",
+            "birds/_DSC0095.jpg",
+            "birds/_DSC0148 (1).jpg",
+            "birds/_DSC0324.jpg"
+        ],
+        "sourceImg": "birds/IMG-20230720-WA0005.jpg"
+    },
+    {
+        "caption": "products",
+        "photos": [
+            "products/_DSC0041.jpg",
+            "products/signal-2024-09-20-17-02-58-118.jpg"
+        ],
+        "sourceImg": "products/_DSC0041.jpg"
+    },
+    {
+        "caption": "street",
+        "photos": [
+            "street/_DSC4740.jpg",
+            "street/_DSC5495(1).jpg",
+            "street/_DSC5495.jpg",
+            "street/_DSC5560.jpg"
+        ],
+        "sourceImg": "street/_DSC4740.jpg"
+    },
+    {
+        "caption": "wild_life",
+        "photos": [
+            "wild_life/IMG-20230720-WA0017.jpg",
+            "wild_life/IMG-20230813-WA0002.jpg",
+            "wild_life/_DSC0091.jpg",
+            "wild_life/signal-2024-06-01-20-49-14-421.jpg",
+            "wild_life/signal-2024-06-01-20-49-47-083.jpg"
+        ],
+        "sourceImg": "wild_life/IMG-20230720-WA0017.jpg"
+    },
+    {
+        "caption": "misc",
+        "photos": [
+            "misc/_DSC4484.jpeg",
+            "misc/_DSC4483.jpeg"
+        ],
+        "sourceImg": "misc/_DSC4484.jpeg"
+    }
+]

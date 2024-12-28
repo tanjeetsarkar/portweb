@@ -1,0 +1,24 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 257" width="315" height="175">
+  <!-- svg-source:excalidraw -->
+  
+  <defs>
+    <style class="style-fonts">
+      @font-face {
+        font-family: "Virgil";
+        src: url("https://file%2B.vscode-resource.vscode-cdn.net/home/voldemort/.vscode/extensions/pomdtr.excalidraw-editor-3.7.4/public//dist/excalidraw-assets/Virgil.woff2");
+      }
+      @font-face {
+        font-family: "Cascadia";
+        src: url("https://file%2B.vscode-resource.vscode-cdn.net/home/voldemort/.vscode/extensions/pomdtr.excalidraw-editor-3.7.4/public//dist/excalidraw-assets/Cascadia.woff2");
+      }
+      @font-face {
+        font-family: "Assistant";
+        src: url("https://file%2B.vscode-resource.vscode-cdn.net/home/voldemort/.vscode/extensions/pomdtr.excalidraw-editor-3.7.4/public//dist/excalidraw-assets/Assistant-Regular.woff2");
+      }
+    </style>
+    <clipPath id="KHP3d74UsFztE10E1tgsA">
+            <rect transform="translate(0 0) rotate(0 157.5 87.5)" width="315" height="175">
+          </rect>
+        </clipPath>
+  </defs>
+  <rect x="0" y="0" width="315" height="175" fill="#ffffff"></rect><g clip-path="url(#KHP3d74UsFztE10E1tgsA)"><g transform="translate(53 18.53866666666667) rotate(0 99.140625 67.68)"><text x="99.140625" y="0" font-family="Cascadia, Segoe UI Emoji" font-size="112.79999999999994px" fill="#f08c00" text-anchor="middle" style="white-space: pre;" direction="ltr" dominant-baseline="text-before-edge">tts</text></g></g></svg>

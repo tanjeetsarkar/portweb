@@ -1,10 +1,10 @@
 import os
 import json
-from PIL import Image, ImageFilter
+from PIL import Image
 import shutil
 
 
-def process_image(file_path):
+def process_image(file_path, dir_name_len=2):
     print(f"processing {file_path}")
     base, ext = os.path.splitext(file_path)
     large_file_name = f"{base}-large{ext}"
@@ -31,13 +31,9 @@ def process_image(file_path):
         if os.path.getsize(small_file_name) > 300:
             img_small.save(small_file_name, format=original_format, quality=2)
 
-    modified_paths = []
-    for _path in [file_path, small_file_name, large_file_name]:
-        modified_path = os.path.join(*_path.split(os.sep)[1:])
-        modified_paths.append(modified_path)
-        print(f"modified base path {modified_path}")
-    file_path, small_file_name, large_file_name = modified_paths
-    return [file_path, small_file_name, large_file_name]
+    modified_path = os.path.join(*file_path.split(os.sep)[-dir_name_len:])
+
+    return modified_path
 
 
 def create_processed_directory(directory):
@@ -49,7 +45,8 @@ def create_processed_directory(directory):
 
     # Ensure the destination directory does not already exist
     if os.path.exists(dst_dir):
-        raise FileExistsError(f"Destination directory '{dst_dir}' already exists.")
+        shutil.rmtree(dst_dir)
+        print(f"Deleted existing directory '{dst_dir}'.")
 
     # Copy the contents of the source directory to the destination directory
     shutil.copytree(directory, dst_dir)
@@ -74,6 +71,32 @@ def process_directory(directory, recursive):
             break  # Only process the top directory if not recursive
     return result
 
+def process_structured_directory(directory, recursive):
+    p_directory = create_processed_directory(directory)
+    result = []
+    dir_name_len = len(directory.split(os.sep))
+    for root, dirs, files in os.walk(p_directory):
+        if not recursive:
+            dirs.clear()
+        folder_name = os.path.basename(root)
+        p_dict1 = {
+            "caption": folder_name,
+            "photos": []
+        }
+        if files:
+            for file in files:
+                if file.lower().endswith(".jpeg") or file.lower().endswith(".jpg"):
+                    file_path = os.path.join(root, file)
+                    p_dict1["photos"].append(process_image(file_path, dir_name_len=dir_name_len))
+            
+            p_dict1['sourceImg'] = p_dict1["photos"][0]
+            result.append(p_dict1)
+        
+        if not recursive:
+            break
+    
+    return result
+
 
 if __name__ == "__main__":
     import argparse
@@ -89,7 +112,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     if os.path.isdir(args.path):
-        result = process_directory(args.path, args.recursive)
+        result = process_structured_directory(args.path, args.recursive)
     else:
         result = {"": [process_image(args.path)]}
 
