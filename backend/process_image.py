@@ -31,10 +31,14 @@ def process_image(file_path, dir_name_len=2):
         if os.path.getsize(small_file_name) > 300:
             img_small.save(small_file_name, format=original_format, quality=2)
 
-    modified_path = os.path.join(*file_path.split(os.sep)[-dir_name_len:])
-
+    modified_path = os.path.join(*file_path.split(os.sep)[1:])
     return modified_path
 
+def remove_spaces(src):
+    for root, dirs, files in os.walk(src):
+        for name in dirs + files:
+            new_name = name.replace(" ", "_")
+            os.rename(os.path.join(root, name), os.path.join(root, new_name))
 
 def create_processed_directory(directory):
     if not os.path.exists(directory):
@@ -51,7 +55,7 @@ def create_processed_directory(directory):
     # Copy the contents of the source directory to the destination directory
     shutil.copytree(directory, dst_dir)
     print(f"Copied contents from '{directory}' to '{dst_dir}'.")
-
+    remove_spaces(dst_dir)
     return dst_dir
 
 
@@ -74,7 +78,6 @@ def process_directory(directory, recursive):
 def process_structured_directory(directory, recursive):
     p_directory = create_processed_directory(directory)
     result = []
-    dir_name_len = len(directory.split(os.sep))
     for root, dirs, files in os.walk(p_directory):
         if not recursive:
             dirs.clear()
@@ -87,6 +90,7 @@ def process_structured_directory(directory, recursive):
             for file in files:
                 if file.lower().endswith(".jpeg") or file.lower().endswith(".jpg"):
                     file_path = os.path.join(root, file)
+                    dir_name_len = len(file_path.split(os.sep))
                     p_dict1["photos"].append(process_image(file_path, dir_name_len=dir_name_len))
             
             p_dict1['sourceImg'] = p_dict1["photos"][0]
