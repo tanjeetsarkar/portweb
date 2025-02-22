@@ -37,14 +37,13 @@ export const PortfolioBlock = ({ caption, sourceImg }: PortfolioBlockProps) => {
       <Image
         loading="lazy"
         width={"100%"}
-        height={"100%"}
         src={sourceImg}
         className="hoverable-image"
         onLoad={handleImageLoad}
         style={{ opacity: isLoaded ? 1 : 0, objectFit: "cover" }}
       />
       <div className="overlay">
-        <Text h2 className="overlay-text">{caption}</Text>
+        <Text h2 className="overlay-text">{caption.replace(/_/g, " ")}</Text>
       </div>
     </div>
   );

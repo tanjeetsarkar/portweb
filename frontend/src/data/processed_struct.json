@@ -2,50 +2,129 @@
     {
         "caption": "birds",
         "photos": [
-            "birds/IMG-20230720-WA0005.jpg",
-            "birds/IMG-20230720-WA0006.jpg",
-            "birds/IMG-20231126-WA0038.jpg",
-            "birds/_DSC0095.jpg",
-            "birds/_DSC0148 (1).jpg",
-            "birds/_DSC0324.jpg"
+            "12_topics/birds/1.jpg"
         ],
-        "sourceImg": "birds/IMG-20230720-WA0005.jpg"
+        "sourceImg": "12_topics/birds/1.jpg"
     },
     {
-        "caption": "products",
+        "caption": "dynamism",
         "photos": [
-            "products/_DSC0041.jpg",
-            "products/signal-2024-09-20-17-02-58-118.jpg"
+            "12_topics/dynamism/1.jpg",
+            "12_topics/dynamism/2.jpg"
         ],
-        "sourceImg": "products/_DSC0041.jpg"
+        "sourceImg": "12_topics/dynamism/1.jpg"
     },
     {
-        "caption": "street",
+        "caption": "patterns",
         "photos": [
-            "street/_DSC4740.jpg",
-            "street/_DSC5495(1).jpg",
-            "street/_DSC5495.jpg",
-            "street/_DSC5560.jpg"
+            "12_topics/patterns/1.jpg",
+            "12_topics/patterns/2.jpg"
         ],
-        "sourceImg": "street/_DSC4740.jpg"
+        "sourceImg": "12_topics/patterns/1.jpg"
     },
     {
-        "caption": "wild_life",
+        "caption": "wildlife",
         "photos": [
-            "wild_life/IMG-20230720-WA0017.jpg",
-            "wild_life/IMG-20230813-WA0002.jpg",
-            "wild_life/_DSC0091.jpg",
-            "wild_life/signal-2024-06-01-20-49-14-421.jpg",
-            "wild_life/signal-2024-06-01-20-49-47-083.jpg"
+            "12_topics/wildlife/39.jpg",
+            "12_topics/wildlife/wilderness.jpg"
         ],
-        "sourceImg": "wild_life/IMG-20230720-WA0017.jpg"
+        "sourceImg": "12_topics/wildlife/39.jpg"
     },
     {
-        "caption": "misc",
+        "caption": "contemporary_landscapes",
         "photos": [
-            "misc/_DSC4484.jpeg",
-            "misc/_DSC4483.jpeg"
+            "12_topics/contemporary_landscapes/1.jpg",
+            "12_topics/contemporary_landscapes/2.jpg",
+            "12_topics/contemporary_landscapes/3.jpg",
+            "12_topics/contemporary_landscapes/4.jpg",
+            "12_topics/contemporary_landscapes/5.jpg",
+            "12_topics/contemporary_landscapes/6.jpg"
         ],
-        "sourceImg": "misc/_DSC4484.jpeg"
+        "sourceImg": "12_topics/contemporary_landscapes/1.jpg"
+    },
+    {
+        "caption": "fashion_in_colour",
+        "photos": [
+            "12_topics/fashion_in_colour/3H7A0026-1.jpg",
+            "12_topics/fashion_in_colour/_DSC7417.jpg",
+            "12_topics/fashion_in_colour/_DSC7534.jpg",
+            "12_topics/fashion_in_colour/_DSC9585.jpg"
+        ],
+        "sourceImg": "12_topics/fashion_in_colour/3H7A0026-1.jpg"
+    },
+    {
+        "caption": "multiple_body_language_and_expression",
+        "photos": [
+            "12_topics/multiple_body_language_and_expression/2.jpg",
+            "12_topics/multiple_body_language_and_expression/3.jpg",
+            "12_topics/multiple_body_language_and_expression/5.jpg",
+            "12_topics/multiple_body_language_and_expression/6.jpg",
+            "12_topics/multiple_body_language_and_expression/7.jpg",
+            "12_topics/multiple_body_language_and_expression/8.jpg",
+            "12_topics/multiple_body_language_and_expression/annakut.jpg",
+            "12_topics/multiple_body_language_and_expression/chaos_in_street.jpg",
+            "12_topics/multiple_body_language_and_expression/ganga_rituals.jpg"
+        ],
+        "sourceImg": "12_topics/multiple_body_language_and_expression/2.jpg"
+    },
+    {
+        "caption": "product_and_still_life",
+        "photos": [
+            "12_topics/product_and_still_life/1.jpg",
+            "12_topics/product_and_still_life/10.jpg",
+            "12_topics/product_and_still_life/2.jpg",
+            "12_topics/product_and_still_life/3.jpg",
+            "12_topics/product_and_still_life/4.jpg",
+            "12_topics/product_and_still_life/5.jpg",
+            "12_topics/product_and_still_life/6.jpg",
+            "12_topics/product_and_still_life/7.jpg",
+            "12_topics/product_and_still_life/8.jpg",
+            "12_topics/product_and_still_life/9.jpg"
+        ],
+        "sourceImg": "12_topics/product_and_still_life/1.jpg"
+    },
+    {
+        "caption": "studio_portraits",
+        "photos": [
+            "12_topics/studio_portraits/1.jpg",
+            "12_topics/studio_portraits/2.jpg",
+            "12_topics/studio_portraits/3.jpg",
+            "12_topics/studio_portraits/4.jpg",
+            "12_topics/studio_portraits/5.jpg"
+        ],
+        "sourceImg": "12_topics/studio_portraits/1.jpg"
+    },
+    {
+        "caption": "colour",
+        "photos": [
+            "series/colour/1.jpg",
+            "series/colour/2.jpg",
+            "series/colour/clothes.jpg",
+            "series/colour/veiled.jpg"
+        ],
+        "sourceImg": "series/colour/1.jpg"
+    },
+    {
+        "caption": "dogs",
+        "photos": [
+            "series/dogs/1.jpg",
+            "series/dogs/2.jpg",
+            "series/dogs/3.jpg",
+            "series/dogs/4.jpg"
+        ],
+        "sourceImg": "series/dogs/1.jpg"
+    },
+    {
+        "caption": "trees",
+        "photos": [
+            "series/trees/1.jpg",
+            "series/trees/2.jpg",
+            "series/trees/3.jpg",
+            "series/trees/4.jpg",
+            "series/trees/5.jpg",
+            "series/trees/6.jpg",
+            "series/trees/7.jpg"
+        ],
+        "sourceImg": "series/trees/1.jpg"
     }
 ]

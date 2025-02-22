@@ -6,6 +6,7 @@ import { createContext, Dispatch, SetStateAction, useState } from "react";
 import { PortfolioSection } from "./components/portfolioSection/PortfolioSection";
 import Footer from "./components/footer/Footer";
 import processedData from "./data/processed_struct.json";
+import { MasonrySection } from "./components/masonrySection/MasonrySection";
 
 
 interface PortfolioContextProps {
@@ -26,7 +27,7 @@ function App() {
     <>
       <PortfolioContext.Provider value={{ selectedSection, setSelectedSection, portfolioSections }}>
         {selectedSection ?
-          <PortfolioSection />
+          <MasonrySection />
           :
           <>
             <Header />
